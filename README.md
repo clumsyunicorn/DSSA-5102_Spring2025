@@ -77,5 +77,6 @@ This repository contains assignments and datasets for the Data Gathering & Wareh
 - World Bank Dataset: https://data.worldbank.org/indicator/IT.NET.USER.ZS
 
 ### Links
-- **GitHub Account:** (https://github.com/clumsyunicorn)
-- **Repository Link:** (https\://github.com/clumsyunicorn/DSSA-5102\_Spring2025)
+- **GitHub Account:** [Github Account](https://github.com/clumsyunicorn)
+- **Repository Link:** [Repository](https\://github.com/clumsyunicorn/DSSA-5102\_Spring2025)
+
