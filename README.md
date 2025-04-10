@@ -69,7 +69,8 @@ This repository contains assignments and datasets for the Data Gathering & Wareh
   - Practiced basic SQL commands and queries.
 - **Assignment #6:** Creating a Database from Scratch
   - Built a database locally and using MySQL Workbench.
-
+- **Assignment #7:**
+- **Assignment #8:**
 ---
 
 ## References
