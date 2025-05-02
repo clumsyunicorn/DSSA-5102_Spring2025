@@ -1,83 +1,118 @@
-# Data Gathering & Warehousing
-## DSSA-5102 - Spring 2025
-_Data Science and Strategic Analytics Graduate Program_ - [Stockton University](https://www.stockton.edu/)
+# 📘 DSSA-5102: Data Gathering & Warehousing (Spring 2025)
 
-### Repository Overview
-This repository contains assignments and datasets for the Data Gathering & Warehousing course (DSSA-5102) at Stockton University. The focus of this course is on identifying, cleaning, and managing data to create effective data warehouses. Each assignment builds upon the previous work, leading up to creating a fully functional database.
-
-### Languages & Environment
-- **Languages:** Python, SQL
-- **Tools & Platforms:** Anaconda Navigator, Jupyter Notebook, GitHub, Spyder
+_Data Science and Strategic Analytics Graduate Program_  
+**Stockton University**
 
 ---
 
-## Datasets
+## 📁 Repository Overview
 
-### 1. Data Science Salaries Dataset (`ds_salaries.csv`)
+This repository contains assignments and cleaned datasets for **DSSA-5102 - Data Gathering & Warehousing**. The course emphasizes real-world data collection, cleaning, transformation, and warehousing using Python and SQL. Each assignment builds upon the last, culminating in a live API connection and populated MySQL database.
+
+---
+
+## 💻 Languages & Environment
+- **Languages:** Python, SQL
+- **Tools:** Jupyter Notebook, Anaconda Navigator, GitHub, MySQL Workbench, Spyder
+
+---
+
+## 📦 Datasets
+
+### 1. Data Science Salaries Dataset (`ds_salaries_clean.csv`)
 - **Source:** [Kaggle - Data Science Salaries](https://www.kaggle.com/datasets/ruchi798/data-science-job-salaries)
-- **Collection Method:** Data was collected through job scraping and self-reported salary data from professionals in the data science field.
-- **Extraction Method:** Downloaded as a CSV file from Kaggle.
-- **Cleaning Program:** Data was cleaned using Python, specifically in Jupyter Notebook.
-- **Cleaning/Transformation Steps:**
-  - Removed null values.
-  - Normalized salary data to a consistent currency (USD).
-  - Renamed columns for clarity.
-  - Filtered out outlier salary values using IQR method.
-- **Units of Numeric Data:**
-  - Salary is represented in USD ($).
-  - Experience level is represented as ordinal values (e.g., EN, MI, SE, EX).
-- **Column Definitions:**
-  - `work_year`: Year of the recorded salary.
-  - `experience_level`: Professional experience level.
-  - `job_title`: Job title of the professional.
-  - `salary`: Salary in USD.
-  - `salary_currency`: Original currency of the salary.
-  - `employee_residence`: Country of residence.
-  - `remote_ratio`: Percentage of remote work allowed.
-  - `company_location`: Location of the company.
-  - `company_size`: Size of the company (S, M, L).
-- **Regulations & Use:** Data is publicly available under the Creative Commons License (CC BY-SA 4.0).
+- **Accessed On:** January 25, 2025
+- **Year Range:** 2020–2023
+- **Cleaning Process:**
+  - Removed null values
+  - Normalized currencies to USD
+  - Simplified column names
+  - Removed outliers using IQR
+- **Units:**
+  - Salary in USD
+  - Experience: EN (Entry), MI (Mid), SE (Senior), EX (Executive)
 
 ### 2. Global Internet Users Dataset (`internet_users.csv`)
 - **Source:** [World Bank Data](https://data.worldbank.org/indicator/IT.NET.USER.ZS)
-- **Collection Method:** Collected through national surveys and global statistics.
-- **Extraction Method:** CSV download from the World Bank website.
-- **Cleaning Program:** Cleaned using Python in Jupyter Notebook.
-- **Cleaning/Transformation Steps:**
-  - Removed incomplete rows.
-  - Converted percentage values to decimal form for analysis.
-  - Reformatted date columns for consistency.
-- **Units of Numeric Data:**
-  - Internet usage is represented as a percentage of the population.
-- **Column Definitions:**
-  - `Country Name`: Name of the country.
-  - `Country Code`: ISO code of the country.
-  - `Year`: Year of the data.
-  - `Internet Users %`: Percentage of the population using the internet.
-- **Regulations & Use:** Freely available for educational and research purposes under the World Bank's open data policy.
+- **Accessed On:** February 2, 2025
+- **Year Range:** 1990–2022
+- **Cleaning Process:**
+  - Removed rows with missing data
+  - Converted percentages to decimal
+  - Reformatted year column
+- **Units:** Internet usage as % of population
+
+### 3. Palmer Penguins Dataset (`penguins_clean.csv`)
+- **Source:** [palmerpenguins R package](https://allisonhorst.github.io/palmerpenguins/)
+- **Accessed On:** March 5, 2025
+- **Cleaning Process:**
+  - Removed rows with missing values
+  - Standardized numerical fields
+- **Units:** Bill length/depth (mm), body mass (g), flipper length (mm)
 
 ---
 
-## Assignments
-- **Assignment #1:** Locating a Dataset
-  - Imported data and conducted an initial exploration of the dataset.
-- **Assignment #2:** Cleaning our Dataset
-  - Focused on preparing the dataset for database integration.
-- **Assignment #3:** Metadata
-  - Created this detailed metadata file.
-- **Assignment #4 & #5:** Only Murders in the...Database?
-  - Practiced basic SQL commands and queries.
-- **Assignment #6:** Creating a Database from Scratch
-  - Built a database locally and using MySQL Workbench.
-- **Assignment #7:**
-- **Assignment #8:**
+## 📚 Assignments
+
+### Assignment #1: Locating a Dataset
+- Selected initial datasets
+- Explored structure and source reliability
+- Described dataset origin and license
+
+### Assignment #2: Cleaning our Dataset
+- Performed null removal, type conversion, and outlier filtering
+- Included code comments to explain each cleaning step
+
+### Assignment #3: Metadata
+- Created this README file
+- Added source, units, transformation logic for each dataset
+
+### Assignment #4 & #5: Only Murders in the...Database?
+- Practiced `WHERE`, `GROUP BY`, and basic SQL filters
+- Answered mystery-style questions using data insights
+
+### Assignment #6: Creating a Database from Scratch
+- Created tables in MySQL Workbench
+- Populated tables using Python and `pymysql`
+- Linked foreign keys and tested table integrity
+
 ---
 
-## References
-- Kaggle Dataset: https://www.kaggle.com/datasets/ruchi798/data-science-job-salaries
-- World Bank Dataset: https://data.worldbank.org/indicator/IT.NET.USER.ZS
+## 🧩 Advanced Assignments
 
-### Links
-- **GitHub Account:** [Github Account](https://github.com/clumsyunicorn)
-- **Repository Link:** [Repository](https\://github.com/clumsyunicorn/DSSA-5102\_Spring2025)
+### Assignment #7: Creating our Database Schema Diagram
+- **Tools Used:** Python, MySQL Workbench, Jupyter Notebook  
+- **Summary:** Finalized the full schema and visualized using MySQL EER Diagram tools. Uploaded `.ipynb` with schema SQL and screenshots.
 
+### Assignment #8: JOINing our Knowledge
+- **Tools Used:** SQL, Python  
+- **Summary:** Performed `INNER`, `LEFT`, and `FULL` JOINs to answer multi-table queries.  
+- **Output:** Markdown cells include rationale and query logic.
+
+### Assignment #9: MISC. SQL Syntax and Longer Queries
+- **Tools Used:** SQL, Jupyter Notebook or Workbench  
+- **Summary:** Explored `CASE`, nested `SELECT`, aliases, and advanced filters. Exported results to `.csv`. Markdown answers and explanations included.
+
+### Assignment #10: API/Live Social Media Data – Pulling it All Together!
+- **Tools Used:** Python, ipyNaturalist, iNaturalist API  
+- **Summary:** Accessed turtle observation data using either:
+  - A personal API token, or  
+  - Instructor's public profile (`melissalaurino`)
+- **Result:** Data pulled, transformed, loaded into MySQL; visualized insights and submitted as `.ipynb`
+
+---
+
+## 🛠 Additional Notes
+- Markdown cell questions have now been fully answered.
+- All notebooks now include inline code comments for better clarity.
+- All assignment `.ipynb` files are available on GitHub.
+
+---
+
+## 🔗 Links
+- **GitHub Account:** [clumsyunicorn](https://github.com/clumsyunicorn)
+- **Repository:** [DSSA-5102 Spring 2025](https://github.com/clumsyunicorn/DSSA-5102_Spring2025)
+
+---
+
+_Last updated: May 2, 2025_
