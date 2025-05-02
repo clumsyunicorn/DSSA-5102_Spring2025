@@ -1,23 +1,23 @@
-# 📘 DSSA-5102: Data Gathering & Warehousing (Spring 2025)
+# DSSA-5102: Data Gathering & Warehousing (Spring 2025)
 
 _Data Science and Strategic Analytics Graduate Program_  
 **Stockton University**
 
 ---
 
-## 📁 Repository Overview
+## Repository Overview
 
 This repository contains assignments and cleaned datasets for **DSSA-5102 - Data Gathering & Warehousing**. The course emphasizes real-world data collection, cleaning, transformation, and warehousing using Python and SQL. Each assignment builds upon the last, culminating in a live API connection and populated MySQL database.
 
 ---
 
-## 💻 Languages & Environment
+## Languages & Environment
 - **Languages:** Python, SQL
 - **Tools:** Jupyter Notebook, Anaconda Navigator, GitHub, MySQL Workbench, Spyder
 
 ---
 
-## 📦 Datasets
+## Datasets
 
 ### 1. Data Science Salaries Dataset (`ds_salaries_clean.csv`)
 - **Source:** [Kaggle - Data Science Salaries](https://www.kaggle.com/datasets/ruchi798/data-science-job-salaries)
@@ -52,7 +52,7 @@ This repository contains assignments and cleaned datasets for **DSSA-5102 - Data
 
 ---
 
-## 📚 Assignments
+## Assignments
 
 ### Assignment #1: Locating a Dataset
 - Selected initial datasets
@@ -76,10 +76,6 @@ This repository contains assignments and cleaned datasets for **DSSA-5102 - Data
 - Populated tables using Python and `pymysql`
 - Linked foreign keys and tested table integrity
 
----
-
-## 🧩 Advanced Assignments
-
 ### Assignment #7: Creating our Database Schema Diagram
 - **Tools Used:** Python, MySQL Workbench, Jupyter Notebook  
 - **Summary:** Finalized the full schema and visualized using MySQL EER Diagram tools. Uploaded `.ipynb` with schema SQL and screenshots.
@@ -100,16 +96,7 @@ This repository contains assignments and cleaned datasets for **DSSA-5102 - Data
   - Instructor's public profile (`melissalaurino`)
 - **Result:** Data pulled, transformed, loaded into MySQL; visualized insights and submitted as `.ipynb`
 
----
-
-## 🛠 Additional Notes
-- Markdown cell questions have now been fully answered.
-- All notebooks now include inline code comments for better clarity.
-- All assignment `.ipynb` files are available on GitHub.
-
----
-
-## 🔗 Links
+## Links
 - **GitHub Account:** [clumsyunicorn](https://github.com/clumsyunicorn)
 - **Repository:** [DSSA-5102 Spring 2025](https://github.com/clumsyunicorn/DSSA-5102_Spring2025)
 
